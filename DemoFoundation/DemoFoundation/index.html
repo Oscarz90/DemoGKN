@@ -1,0 +1,94 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foundation | Welcome</title>
+  <link rel="stylesheet" href="css/foundation.css" />
+  <script src="js/vendor/modernizr.js"></script>
+  <style>
+    html { 
+      background: url(img/background-site.jpg) no-repeat center center fixed; 
+
+      width: 100%;
+      height: auto;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    #login{
+      color: #fff;
+      text-align: center;
+      position: relative;
+      top: 50%;
+    }
+    input[type="text"],input[type="password"]{
+      background-color: transparent;
+      border-color: #FFFFFF;
+      color: rgb(255, 255, 255);
+      border-radius: 3px;
+    }
+    input[type="text"]:focus ,input[type="password"]:focus{
+      background-color: transparent;
+      border-color: #FFCC33;
+    }
+    .button{
+      background-color: #336699;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body style="background:transparent">
+  <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="#">GKN</a></h1>
+      </li>
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <li class="toggle-topbar menu-icon"><a href="#"><span>Menu 1</span></a></li>
+    </ul>
+
+    <section class="top-bar-section">
+      <!-- Right Nav Section -->
+      <ul class="right">
+        <li class="active"><a href="#">Login</a></li>
+        <li class="has-dropdown">
+          <a href="#">Menu 3</a>
+          <ul class="dropdown">
+            <li><a href="#">SubMenu 1</a></li>
+            <li class="active"><a href="#">SubMenu 2</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Left Nav Section -->
+      <ul class="left">
+        <li><a href="#">Menu 1</a></li>
+      </ul>
+    </section>
+  </nav>
+  <div class="row">
+    <div class="small-12 columns">
+      <h2 style="color:white">Login</h2>
+      <label>
+        <h4 style="color:white">Usuario</h4>
+        <input type="text" placeholder="Usuario" />
+      </label>
+    </div>
+    <div class="small-12 columns">
+      <label>
+        <h5 style="color:white">Password</h5>
+        <input type="password" placeholder="Contraseña" />
+      </label>
+      <a href="#" class="button">Login</a>
+    </div>  
+  </div>
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>

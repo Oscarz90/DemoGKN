@@ -1,0 +1,5 @@
+C:\Users\430004587\Oscar\PRUEBAS\DemoFoundation\DemoFoundation\bin\DemoFoundation.dll
+C:\Users\430004587\Oscar\PRUEBAS\DemoFoundation\DemoFoundation\bin\DemoFoundation.pdb
+C:\Users\430004587\Oscar\PRUEBAS\DemoFoundation\DemoFoundation\obj\Debug\DemoFoundation.csprojResolveAssemblyReference.cache
+C:\Users\430004587\Oscar\PRUEBAS\DemoFoundation\DemoFoundation\obj\Debug\DemoFoundation.dll
+C:\Users\430004587\Oscar\PRUEBAS\DemoFoundation\DemoFoundation\obj\Debug\DemoFoundation.pdb
