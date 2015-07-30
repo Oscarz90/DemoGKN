@@ -62,6 +62,7 @@
     <Content Include="css\normalize.css" />
     <Content Include="img\background-site.jpg" />
     <Content Include="img\gkn-logo.png" />
+    <Content Include="img\gkn-logo.svg" />
     <Content Include="index.html" />
     <Content Include="js\foundation.min.js" />
     <Content Include="js\foundation\foundation.abide.js" />
@@ -92,7 +93,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="img\.gitkeep" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
