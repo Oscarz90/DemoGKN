@@ -2,16 +2,25 @@
 <html class="no-js" lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   <title>Foundation | Welcome</title>
   <link rel="stylesheet" href="css/foundation.css" />
   <script src="js/vendor/modernizr.js"></script>
   <style>
+    @font-face {
+      font-family: 'Gidole-Regular';
+      src: url('font/Gidole-Regular.ttf');
+    }
+    h1,h2,h3,h4,h5,.button{
+       font-family: 'Gidole-Regular';
+    }
+    body{
+      font-family:  'Gidole-Regular';
+    }
     html { 
-      background: url(img/background-site.jpg) no-repeat center center fixed; 
-
+      background: url(img/background-site-small.jpg) no-repeat center center fixed; 
       width: 100%;
-      height: auto;
+      height: 100%;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -28,20 +37,21 @@
       border-color: #FFFFFF;
       color: rgb(255, 255, 255);
       border-radius: 3px;
+      font-size: initial;
     }
     input[type="text"]:focus ,input[type="password"]:focus{
       background-color: transparent;
       border-color: #FFCC33;
+      font-size: initial;
     }
     .button{
       background-color: #336699;
       border-radius: 3px;
     }
-    .gkn{
-      color:white;
-    }
-    .flecha{
-      color:white;
+    .row.full-width {
+      width: 100%;
+      max-width: 100% ; 
+      /*max-width: 100% !important; */
     }
   </style>
 </head>
@@ -49,80 +59,7 @@
   <nav class="top-bar" data-topbar role="navigation">
     <ul class="title-area">
       <li class="name">
-        <!--<h1><a href="#">GKN</a></h1>-->
-       <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="629"
-   height="131"
-   viewBox="0 0 629 131"
-   id="svg4474"
-   version="1.1"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="gkn-logo.svg">
-  <defs
-     id="defs4476" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="379.86087"
-     inkscape:cy="149.00553"
-     inkscape:document-units="px"
-     inkscape:current-layer="layer3"
-     showgrid="true"
-     objecttolerance="10000"
-     inkscape:window-width="1600"
-     inkscape:window-height="848"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     units="px"
-     inkscape:showpageshadow="false"
-     showborder="true">
-    <inkscape:grid
-       type="xygrid"
-       id="grid4540" />
-  </sodipodi:namedview>
-  <metadata
-     id="metadata4479">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     inkscape:groupmode="layer"
-     id="layer3"
-     inkscape:label="Capa 2"
-     transform="translate(0,-921.36214)">
-    <div class="gkn">
-    <path
-       style="fill:#165e9f;fill-opacity:1"
-       d="M 93.954489,1050.6571 C 92.762909,1049.6848 70.87431,1035.025 45.313163,1018.0797 9.6425735,994.43253 -0.82572097,987.03522 0.28338103,986.2599 3.5103115,984.00412 21.214571,972.10986 31.1621,965.51464 c 5.833631,-3.8677 11.515739,-7.6607 12.626907,-8.42888 1.111168,-0.76818 13.45906,-8.95489 27.439763,-18.19267 l 25.419459,-16.79598 52.793081,0.26159 52.79307,0.26159 -18.61353,12.33726 c -10.23744,6.78549 -29.2959,19.418 -42.35212,28.07223 -13.05622,8.65424 -23.85968,16.08 -24.00766,16.5017 -0.14799,0.4217 2.80671,2.78665 6.56599,5.25544 3.75928,2.4688 7.28963,4.84944 7.84522,5.29032 2.16945,1.72157 27.34666,18.15566 28.53681,18.62706 0.98658,0.3908 1.26269,-4.2647 1.26269,-21.29063 0,-21.57298 0.0227,-21.80267 2.27284,-22.97699 1.25006,-0.6524 15.12096,-9.77655 30.82422,-20.27588 15.70325,-10.49934 29.22666,-19.34884 30.05204,-19.66557 1.28794,-0.49423 1.50066,1.65886 1.50066,15.18958 0,8.67099 0.23069,15.76544 0.51263,15.76544 0.8519,0 46.43343,-30.7451 46.79618,-31.56439 0.1852,-0.41827 15.66278,-0.76049 34.39463,-0.76049 l 34.05791,0 17.73419,11.86929 c 9.7538,6.52811 20.54549,13.81696 23.98152,16.19744 3.43604,2.38047 6.68397,4.05828 7.21765,3.72845 0.55253,-0.34148 0.97031,-7.31553 0.97031,-16.19743 l 0,-15.59775 31.8198,0 31.81981,0 0,64.64976 0,64.64977 -20.52315,0 -20.52315,0 -11.00002,-7.226 c -6.05002,-3.9743 -11.47444,-7.6236 -12.05428,-8.1095 -0.57983,-0.486 -10.82941,-7.3485 -22.77682,-15.25 -11.94742,-7.9015 -22.85707,-15.1924 -24.24366,-16.2021 -8.41113,-6.12487 -39.10603,-25.92927 -40.19779,-25.93568 -0.72117,-0.004 -3.88647,1.63967 -7.03402,3.65312 l -5.7228,3.66084 2.99341,2.43299 c 1.64638,1.33815 5.26625,3.81392 8.04417,5.50171 5.10693,3.10284 26.42055,17.24592 28.28427,18.76852 0.55558,0.454 6.23769,4.2315 12.62691,8.3946 6.38921,4.1632 11.84403,7.8028 12.12183,8.0881 0.27779,0.2853 5.73261,3.9219 12.12183,8.0812 6.38921,4.1594 11.84404,7.8169 12.12183,8.1277 0.27779,0.3109 2.20971,1.6011 4.29315,2.8672 2.08344,1.266 3.78807,2.4921 3.78807,2.7246 0,0.2325 -24.88764,0.4215 -55.30585,0.4202 l -55.30586,0 -14.86932,-9.8465 c -8.17812,-5.4156 -15.67851,-10.4235 -16.66752,-11.1287 -3.33869,-2.3811 -18.78342,-12.3554 -19.13106,-12.3554 -0.18964,0 -0.3448,7.5004 -0.3448,16.6676 l 0,16.6675 -65.00028,0 c -60.40625,0 -65.153391,-0.125 -67.166771,-1.7678 z"
-       id="gkn"
-       inkscape:connector-curvature="0" /></div>
-     <div class="flecha"><path
-       style="fill:#ebb62f;fill-opacity:1"
-       d="m 481.86432,1051.3972 c 0.18841,-0.5652 7.84031,-6.0011 17.00424,-12.0798 9.16393,-6.0787 18.02539,-12.0094 19.69214,-13.1795 1.66675,-1.17 15.22826,-10.2231 30.13668,-20.118 14.90842,-9.89486 27.0859,-18.38878 27.06107,-18.87534 -0.0248,-0.48656 -20.82746,-14.749 -46.22806,-31.69431 -25.40061,-16.94531 -46.36642,-31.37786 -46.59069,-32.07234 -0.31867,-0.98678 4.97368,-1.26269 24.21969,-1.26269 20.45257,0 24.96196,0.25932 26.60068,1.52971 1.08528,0.84134 22.88338,15.42592 48.44024,32.41019 25.55686,16.98426 46.53964,30.95573 46.62839,31.04771 0.0888,0.092 -15.27409,10.39502 -34.13966,22.89567 -18.86558,12.5006 -34.8481,23.183 -35.51672,23.7385 -0.66862,0.5556 -6.44321,4.4195 -12.83242,8.5863 -6.38922,4.1669 -12.21744,8.1444 -12.9516,8.8389 -1.71403,1.6214 -52.06265,1.851 -51.52398,0.235 z"
-       id="flecha"
-       inkscape:connector-curvature="0" /></div>
-  </g>
-</svg>
+        <h1><a href="#">GKN</a></h1>
       </li>
       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
       <li class="toggle-topbar menu-icon"><a href="#"><span>Menu 1</span></a></li>
@@ -148,21 +85,28 @@
     </section>
   </nav>
   <div class="row">
-    <div class="small-12 columns">
-      <h2 style="color:white">Login</h2>
+    <div class="small-centered small-12 medium-centered medium-5 large-centered large-4 column">
+      <h2  style="color:white">Login</h2>
+    </div>
+    <div class="small-centered small-12 medium-centered medium-5 large-centered large-4 column">
       <label>
         <h4 style="color:white">Usuario</h4>
         <input type="text" placeholder="Usuario" />
       </label>
     </div>
-    <div class="small-12 columns">
+    <div class="small-centered small-12 medium-centered medium-5 large-centered large-4 column">
       <label>
-        <h5 style="color:white">Password</h5>
+        <h4 style="color:white">Password</h4>
         <input type="password" placeholder="Contraseña" />
       </label>
+      
+    </div>
+    <div class="small-centered small-12 medium-centered medium-5 large-centered large-4 column"  >
       <a href="#" class="button">Login</a>
-      <input type="file" name="photo" accept="image/*;capture=camera"></input>
-    </div>  
+    </div>
+    <div class="small-centered small-1 medium-centered medium-1 large-centered large-1 column"  >
+      <img src="icon/bars.svg" width="40" alt="">
+    </div>
   </div>
 
   <script src="js/vendor/jquery.js"></script>
